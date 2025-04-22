@@ -1,0 +1,673 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 400px; 
+  overflow: hidden;
+}
+
+.hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 2;
+  padding: 50px 20px;
+}
+.hero-content h1 {
+  color: white;
+  font-size: 40px; /* Adjust the font size if needed */
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Add a text shadow for better readability */
+}
+
+
+/* Ensure content is readable */
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  background-color: #333; 
+  padding: 10px 20px;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 8px;
+}
+
+.brand-name {
+  font-size: 22px;
+  color: lightskyblue; /* "World Traveller" in blue */
+  font-family: 'Pacifico', cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Soft shadow */
+}
+nav a {
+  color: white;
+  font-weight: bold;
+  margin: 0 15px;
+  text-decoration: none;
+}
+nav a:hover {
+  transform: scale(1.1); /* Add scaling effect */
+}
+.navbar-login {
+  float: right;
+  background-color: #007bff; /* Blue color */
+  color: white;
+  padding: 5px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px; 
+  line-height: 1.5; 
+  margin-top: -5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-login:hover {
+  background-color: #0056b3; 
+}
+.navbar-button {
+  background-color: #007bff; 
+  color: white;
+  padding: 5px 12px; 
+  border-radius: 4px; 
+  text-decoration: none;
+  font-size: 14px; 
+  display: inline-block; 
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px; 
+}
+
+.navbar-button:hover {
+  background-color: #0056b3; 
+}
+
+
+.places, .contact, .forum-container {
+  padding: 25px ;
+  width: 90%;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255,);
+  color: black;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd; /* Light gray border */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.popular-destionations {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: rgb(255, 255, 255,);
+  color: black;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd; /* Light gray border */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  justify-content: center;
+}
+
+.box {
+  position: relative;
+  height: 200px;
+  padding-top: 20%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+.overlaypd {
+  position: absolute;
+  inset: 0;
+  padding: 10px;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.box:hover .overlaypd {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+h1 {
+  color: #333;
+}
+.banner {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px; /* Reduced margin */
+}
+p {
+  font-size: 18px;
+  color: #666;
+  margin: 20px 0;
+}
+.btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: #007bff;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-header h2 {
+  font-size: 16px;
+  color: #6c757d;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.section-header p {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.testimonial-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.testimonial-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #dee2e6;
+  margin-bottom: 15px;
+}
+
+.stars {
+  margin: 10px 0;
+}
+
+.checked {
+  color: orange;
+}
+
+.testimonial-text {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.testimonial-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.testimonial-country {
+  font-size: 16px;
+  color: gray;
+}
+
+.leave-review-btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 20px; /* Space from text above */
+  margin-bottom: 50px; /* ⬅ Increases spacing from FAQ box */
+  transition: background-color 0.3s ease;
+}
+
+.leave-review-btn:hover {
+  background-color: #0056b3;
+}
+
+
+@media (min-width: 768px) {
+  .testimonials {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px; 
+  }
+}
+
+.hotel-booking {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+.hotel-booking h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.hotel-booking p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.book-now-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.book-now-btn:hover {
+  background-color: #0056b3;
+}
+
+/* 🔹 Make the layout stack on smaller screens */
+@media screen and (max-width: 480px) {
+  .contact {
+      max-width: 90%; /* Allow flexibility on small screens */
+      padding: 15px;
+  }
+
+  .contact-item {
+      flex-direction: column; /* Stack icon above text */
+      text-align: center;
+  }
+
+  .contact-icon {
+      margin-bottom: 5px; /* Add spacing below the icon */
+  }
+}
+
+.contact {
+  max-width: 400px; /* Limit the width */
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center text for small screens */
+}
+
+.contact-item {
+  display: flex;
+  align-items: center; /* Align items in a row */
+  justify-content: center;
+  gap: 10px; /* Add space between icon and text */
+  margin: 15px 0;
+}
+
+
+.contact-icon {
+  width: 30px; /* Set fixed icon size */
+  height: auto;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+/* 🔹 RESPONSIVENESS */
+
+/* 📱 Mobile Devices */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero {
+    height: 300px;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;
+  }
+
+  .testimonial-card {
+    padding: 20px;
+  }
+
+  .testimonial-text {
+    font-size: 16px;
+  }
+}
+
+/* 📱 Small Mobile Devices */
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .hero {
+    height: 250px;
+  }
+
+  .hero-content h1 {
+    font-size: 24px;
+  }
+
+  .navbar-login, .navbar-button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .testimonial-card {
+    padding: 15px;
+  }
+
+  .testimonial-text {
+    font-size: 14px;
+  }
+}
+  /* 🔹 GENERAL NAVBAR STYLING */
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+    position: relative;
+}
+
+/* 🔹 NAV LINKS (VISIBLE ON DESKTOP) */
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    font-weight: bold;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    transform: scale(1.1);
+}
+
+/* 🔹 HAMBURGER MENU BUTTON */
+.menu-btn {
+    display: none; /* Hide by default on desktop */
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    background: transparent;
+    border: none;
+}
+
+/* 🔹 SIDEBAR MENU (HIDDEN BY DEFAULT) */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Keep sidebar hidden initially */
+    width: 250px;
+    height: 100%;
+    align-items: center; /* Center items horizontally */    
+    background-color: #333;
+    padding-top: 60px;
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.sidebar.active {
+    left: 0; /* Slide sidebar into view */
+}
+
+/* 🔹 CLOSE BUTTON INSIDE SIDEBAR */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* 🔹 OVERLAY (DARK BACKGROUND WHEN MENU OPENS) */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.overlay.active {
+    display: block;
+}
+
+/* 🔹 RESPONSIVE DESIGN - SHOW HAMBURGER MENU ON MOBILE */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none !important; /* Ensure it is hidden on mobile */
+    }
+
+    .menu-btn {
+        display: block; /* Show hamburger icon */
+    }
+}
+.links {
+    display: flex;
+    justify-content: center; /* Center links horizontally */
+    align-items: center;
+    gap: 20px; /* Space between links */
+    text-align: center;
+}
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+/* 🔹 STYLE SIDEBAR LINKS */
+.sidebar a {
+    display: block; /* Make links appear in a vertical list */
+    color: white; /* Change text color to white */
+    font-size: 18px;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* 🔹 HOVER EFFECT */
+.sidebar a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* 🔹 STYLE LOGIN/LOGOUT BUTTONS IN SIDEBAR */
+.sidebar .navbar-login, .sidebar .navbar-button {
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 10px auto;
+    width: 80%;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.sidebar .navbar-login:hover, .sidebar .navbar-button:hover {
+    background: #0056b3;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+/* 新增输入框容器样式 */
+.search-input-container {
+  position: relative;
+  display: inline-block;
+}
+
+.search-input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  min-width: 200px; 
+}
+
+.search-button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.search-history {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.search-history-item {
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #000; 
+}
+
+.search-history-item:hover {
+  background-color: #f0f0f0;
+}
+
+.delete-btn {
+  background-color: transparent;
+  border: none;
+  color: red;
+  cursor: pointer;
+  margin-left: 10px;
+}
